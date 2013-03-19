@@ -1,0 +1,21 @@
+<h2>Features</h2>
+<ul>
+<li>rsync folder on Sublime save</li>
+<li>custom rsync commands support</li>
+</ul>
+<h2>Platform</h2>
+<p><strong>Mac OS</strong>, <strong>Linux</strong></p>
+<h2>Installing</h2>
+<p>Sublime package <a href="https://cancerhermit.github.com/sublime-installation.html">Installation Instructions</a></p>
+<h2>Usage</h2>
+<p>plugin looks for <strong>rsync.txt</strong> or <strong>rsync.sh</strong> in folder</p>
+<h4>rsync.txt</h4>
+<p>edit destignation, for <a href="https://github.com/cancerhermit/Sublime-rsync.py/blob/master/rsync.txt">example</a>:</p>
+<pre><code>~/Library/Application Support/Sublime Text 2/Packages
+</code></pre>
+<p>every save execute this code</p>
+<pre><code>/usr/bin/rsync -rtu --delete %folder %destignation
+</code></pre>
+<h4>rsync.sh</h4>
+<p><strong>rsync.sh</strong> if exists executes custom code</p>
+<p>notice: make rsync.sh executable</p>
